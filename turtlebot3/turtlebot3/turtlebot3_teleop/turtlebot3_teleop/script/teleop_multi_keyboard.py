@@ -137,6 +137,11 @@ def check_angular_limit_velocity(velocity):
 
 
 def main():
+    robot_selection = int(input("Select Robot: \nEvader : 1\nPursuer : 2\n"))
+    if robot_selection == 1:
+        robot_name = "/Evader/"
+    elif robot_selection == 2:
+        robot_name = "/Pursuer/"
     settings = None
     if os.name != 'nt':
         settings = termios.tcgetattr(sys.stdin)
@@ -145,7 +150,7 @@ def main():
 
     qos = QoSProfile(depth=10)
     node = rclpy.create_node('teleop_keyboard')
-    pub = node.create_publisher(Twist, 'cmd_vel', qos)
+    pub = node.create_publisher(Twist, (robot_name+'cmd_vel'), qos)
 
     status = 0
     target_linear_velocity = 0.0
