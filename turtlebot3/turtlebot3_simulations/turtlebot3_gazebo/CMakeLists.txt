@@ -75,9 +75,13 @@ install(DIRECTORY launch models rviz urdf worlds scripts
 
 # Install Python scripts
 install(PROGRAMS 
+  scripts/evader_path.py
   scripts/red_detector.py
-  scripts/rrt_explorer.py
-  scripts/rrt_planner.py
+  scripts/navigator.py
+  scripts/navigator_planner.py
+  scripts/maze.png
+  scripts/planner.py
+  
   DESTINATION lib/${PROJECT_NAME}
 )
 

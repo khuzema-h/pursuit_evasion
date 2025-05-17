@@ -23,7 +23,7 @@ def generate_launch_description():
         {
             'name': 'Evader',
             'sdf_file': os.path.join(base_model_path, 'turtlebot3_waffle', 'evader.sdf'),
-            'x_pose': '12.5', 'y_pose': '6.5', 'z_pose': '0.01', 'yaw': '3.14'
+            'x_pose': '10.5', 'y_pose': '6.5', 'z_pose': '0.01', 'yaw': '3.14'
         },
         # You can add more robots with different SDFs
     ]
