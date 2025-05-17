@@ -96,7 +96,7 @@ class PursuerController(Node):
     def load_maze_map(self):
         """Load and process the maze map image."""
         package_share = get_package_share_directory('turtlebot3_gazebo')
-        image_path = '/home/khuzema/project_5_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/scripts/maze.png'
+        image_path = os.path.join(package_share, 'scripts', 'maze.png')
         
         maze = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
         
