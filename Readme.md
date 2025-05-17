@@ -56,7 +56,7 @@ source install/setup.bash
 ## Run 2D Path Planner
 
 ```sh
-cd ~/chase_ws/src
+cd ~/chase_ws/src/pursuit_evasion
 python3 rrt_.py
 
 ```
