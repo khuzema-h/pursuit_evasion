@@ -101,12 +101,12 @@ source install/setup.bash
 ros2 launch turtlebot3_gazebo maze_world.launch.py 
 
 ```
-## Run RRT* Planner Script
+## Run Pursuit RRT* Planner and Navigator Script
 
 In a separate terminal run the following command: 
 
 ```sh
-ros2 run turtlebot3_gazebo planner.py
+ros2 run turtlebot3_gazebo navigator_planner.py
 ```
 
 ## Run Turtlebot Evasion Script
@@ -126,13 +126,7 @@ In a separate terminal run the following command:
 ros2 run turtlebot3_gazebo red_detector.py
 ```
 
-## Run Pursuer Navigator Script
 
-In a separate terminal run the following command: 
-
-```sh
-ros2 run turtlebot3_gazebo navigator.py
-```
 
 
 
