@@ -56,6 +56,7 @@ source install/setup.bash
 ## Run 2D Path Planner
 
 ```sh
+cd ~/chase_ws/src
 python3 rrt_.py
 
 ```
