@@ -102,6 +102,12 @@ source install/setup.bash
 ros2 launch turtlebot3_gazebo maze_world.launch.py 
 
 ```
+
+## Note: 
+
+### If the world shows empty, without the maze, kindly copy the maze folder into .gazebo/models folder on your computer
+
+
 ## Run Pursuit RRT* Planner and Navigator Script
 
 In a separate terminal run the following command: 
